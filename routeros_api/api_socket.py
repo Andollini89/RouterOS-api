@@ -9,7 +9,11 @@ except ImportError:
 EINTR = getattr(errno, 'EINTR', 4)
 
 def get_socket(hostname, port, use_ssl=False, ssl_verify=True, ssl_verify_hostname=True, ssl_context=None, timeout=15.0):
-    api_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    #added ipv4 ipv6 access
+    res = socket.getaddrinfo(hostname, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+    af, socktype, proto, canonname, sockaddr = res[0]
+    
+    api_socket = socket.socket(af, socktype, proto)
     api_socket.settimeout(timeout)
     while True:
         try:
