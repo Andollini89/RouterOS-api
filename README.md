@@ -10,7 +10,7 @@ Python API to RouterBoard devices produced by [MikroTik](https://mikrotik.com/) 
 
 [![Social WiFi logo](https://static.socialwifi.com/cloud/1/images/logo.svg)](https://socialwifi.com)
 
-Added usage of ipv6 connection soket. By adding this error in connection with routeros 7.* disappear. 
+Added usage of ipv6 connection soket. By adding this, error in connection with routeros 7.* disappear. 
 
 ## Usage
 
