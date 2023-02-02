@@ -1,4 +1,4 @@
-# RouterOS-api
+# RouterOS-api Fork from Social WiFi.
 
 [![Build Status](https://travis-ci.org/socialwifi/RouterOS-api.svg?branch=master)](https://travis-ci.org/socialwifi/RouterOS-api)
 [![Latest Version](https://img.shields.io/pypi/v/RouterOS-api.svg)](https://pypi.python.org/pypi/RouterOS-api/)
@@ -9,6 +9,8 @@
 Python API to RouterBoard devices produced by [MikroTik](https://mikrotik.com/) written by [Social WiFi](https://socialwifi.com).
 
 [![Social WiFi logo](https://static.socialwifi.com/cloud/1/images/logo.svg)](https://socialwifi.com)
+
+Added usage of ipv6 connection soket. By adding this error in connection with routeros 7.* disappear. 
 
 ## Usage
 
